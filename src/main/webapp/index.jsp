@@ -12,5 +12,11 @@
 out.println(new InsultGenerator().generateInsult());
 %>
 
+<center>
+	<h1>The request is being answered by:</h1>
+	<h2><font color="red">IP: <%=InetAddress.getLocalHost().getHostAddress()%></font></h2>
+	<h2><font color="blue">HostName: <%=InetAddress.getLocalHost().getCanonicalHostName() %></font></h2>
+        <h2><font color="green">Session ID: <%=request.getSession().getId() %></font></h2>
+</center>
 </body>
 </html>
